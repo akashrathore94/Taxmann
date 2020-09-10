@@ -1,0 +1,223 @@
+/*****GLOBAL STYLES*****/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "FuturaPT";
+  src: url(fonts/FuturaPTBook.otf);
+}
+
+html {
+  font-size: 62.5%;
+  --header1: calc(2rem + 1vw);
+  --header2: calc(3.5rem + 1vw);
+  --header3: calc(2.8rem + 1vw);
+  --header4: calc(2.4rem + 1vw);
+  --text: calc(1.3rem + 1vw);
+  --big: calc(6rem + 1vw);
+  --special-color: #906272;
+  --background-color: #414141;
+  --gray-text: #525252;
+}
+
+h1 {
+  font-size: var(--header1);
+}
+
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: var(--text);
+}
+
+h2 {
+  font-size: var(--header2);
+}
+
+h3 {
+  font-size: var(--header3);
+}
+
+h4,
+h5 {
+  font-size: var(--header4);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "FuturaPT", sans-serif;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.logo-srch {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 35px;
+}
+
+.logo_title {
+  margin-top: 0;
+  font-size: 1.4rem;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+  color: #6a6a6a;
+}
+
+.search-box {
+  width: 480px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: inset 0px 1px 5px rgba(209, 209, 209, 0.5);
+  border-radius: 25px;
+  padding: 5px 0;
+}
+
+.search-btn {
+  color: #f88822;
+  padding-left: 10px;
+}
+
+.search-txt {
+  outline: none;
+  border: none;
+  font-family: FuturaPT;
+  font-size: 1.6rem;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  background: #fafafa;
+  color: #8a8a8a;
+  width: 90%;
+  padding: 0 10px;
+}
+
+.users-actn {
+  display: flex;
+  align-items: center;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.user {
+  width: 20px;
+  height: 20px;
+  background: #25c16f;
+  border-radius: 50%;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user2 {
+  background: #cc4783;
+}
+
+.user3 {
+  background: #8847cc;
+}
+
+.user4 {
+  background: #fff;
+}
+
+.user-down {
+  display: inline-block;
+  background: #fff;
+  color: #f88822;
+}
+
+.user h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.user-bar {
+  width: 1px;
+  height: 20px;
+  background: #e3eaf2;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1.2rem;
+  background: #f88822;
+  color: #fff;
+  border: none;
+  padding: 0.8em 3em;
+  border-radius: 1.5em;
+  outline: none;
+  line-height: 14px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+}
+
+.icons {
+  margin-left: 15px;
+}
+
+.menu {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f88822;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 5rem;
+    --header3: 4rem;
+    --header4: 3rem;
+    --text: 3rem;
+    --big: 8rem;
+    --foot: 1.3rem;
+  }
+}
