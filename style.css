@@ -12,15 +12,9 @@
 
 html {
   font-size: 62.5%;
-  --header1: calc(2rem + 1vw);
-  --header2: calc(3.5rem + 1vw);
-  --header3: calc(2.8rem + 1vw);
-  --header4: calc(2.4rem + 1vw);
-  --text: calc(1.3rem + 1vw);
-  --big: calc(6rem + 1vw);
-  --special-color: #906272;
-  --background-color: #414141;
-  --gray-text: #525252;
+  --special-color: #f88822;
+  --border-color: #82949d;
+  --gray-text: #4a4a4a;
 }
 
 h1 {
@@ -33,20 +27,10 @@ label,
 input,
 a,
 p {
-  font-size: var(--text);
-}
-
-h2 {
-  font-size: var(--header2);
-}
-
-h3 {
-  font-size: var(--header3);
-}
-
-h4,
-h5 {
-  font-size: var(--header4);
+  font-size: 1.2rem;
+  line-height: 25px;
+  letter-spacing: 0.3px;
+  color: #4a4a4a;
 }
 
 ul {
@@ -54,15 +38,7 @@ ul {
 }
 
 a {
-  color: black;
   text-decoration: none;
-}
-
-.flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 body {
@@ -208,6 +184,53 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*Footer*/
+footer {
+  background: #f2f2f2;
+  padding: 85px 0;
+}
+
+footer .container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.contact {
+  width: 20%;
+}
+
+.contact p {
+  padding-right: 35px;
+  margin-top: 20px;
+}
+
+.get-app {
+  margin-top: 25px;
+}
+
+.get-app a {
+  margin-right: 15px;
+}
+
+.social {
+  margin-top: 25px;
+}
+
+.social a {
+  margin-right: 15px;
+}
+
+.list-top {
+  margin-bottom: 20px;
+}
+
+.list-heading {
+  color: #4b4b4b;
+  font-weight: 900;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 1700px) {
