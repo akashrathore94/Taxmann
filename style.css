@@ -41,6 +41,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 body {
   font-family: "FuturaPT", sans-serif;
 }
@@ -172,6 +176,10 @@ header {
   cursor: pointer;
 }
 
+.btn:hover {
+  opacity: 0.9;
+}
+
 .icons {
   margin-left: 15px;
 }
@@ -197,10 +205,6 @@ footer .container {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-
-.contact {
-  width: 25%;
 }
 
 .contact p {
@@ -231,10 +235,6 @@ footer .container {
   color: #4b4b4b;
   font-weight: 900;
   margin-bottom: 5px;
-}
-
-.footer-sub {
-  width: 18%;
 }
 
 @media screen and (min-width: 1700px) {
