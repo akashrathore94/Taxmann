@@ -298,23 +298,25 @@ nav {
 .banner {
   display: flex;
   width: 80%;
+  height: 300px;
   border: 1px solid #e3eaf2;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);
 }
 
 .banner-img {
-  width: 40%;
+  width: 45%;
   background: url("images/image3.png");
   background-size: cover;
+  background-position: center;
 }
 
 .banner-text {
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 30px 20px;
 }
 
 .banner-text h2 {
@@ -353,8 +355,15 @@ nav {
 }
 
 .recommendations {
-  width: 90%;
+  width: 94%;
   margin: auto;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e3eaf2;
+}
+
+.releases {
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 .recom-bar {
@@ -365,6 +374,7 @@ nav {
 .recom-you {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .recom-you h3 {
@@ -372,7 +382,13 @@ nav {
   line-height: 30px;
   letter-spacing: 0.3px;
   color: #000000;
-  margin-right: 15px;
+}
+
+.recom-you a {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .recom-you i {
@@ -385,11 +401,95 @@ nav {
   letter-spacing: 0.35px;
   color: #f88822;
   text-decoration: underline;
+  text-underline-position: under;
+}
+.books-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.book {
+  width: 30%;
+  max-width: 250px;
+}
+
+.book-img {
+  margin-bottom: 10px;
+  position: relative;
+  border: 0.4px solid #e3eaf2;
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.edition {
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.book-desc {
+  margin-bottom: 10px;
+}
+
+.book-desc p {
+  font-size: 1.6rem;
+  line-height: 19px;
+  letter-spacing: 0.3px;
+  color: #000000;
+}
+
+.writer {
+  margin-bottom: 10px;
+}
+.writer p {
+  font-size: 1.8rem;
+  line-height: 21px;
+  letter-spacing: 0.3px;
+  color: #d82813;
+}
+
+.rate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-cart {
+  font-size: 1.2rem;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.428571px;
+  text-transform: uppercase;
+  border: 1px solid #82949d;
+  border-radius: 31px;
+  color: #82949d;
+  padding: 0 0.6em;
+  cursor: pointer;
+}
+.add-cart:hover {
+  opacity: 0.8;
+}
+
+.buy {
+  font-size: 1.2rem;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.257143px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 1em 1.5em;
 }
 /******************ASIDE***********************/
 
 aside {
-  width: 330px;
+  width: 300px;
   height: 500px;
 }
 
