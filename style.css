@@ -23,6 +23,7 @@ h1 {
 
 img {
   max-width: 100%;
+  object-fit: contain;
 }
 
 li,
@@ -188,6 +189,7 @@ header {
 
 .icons {
   margin-left: 15px;
+  width: 20px;
 }
 
 .menu {
@@ -202,7 +204,8 @@ header {
 
 /*****NAV TOGGLE & GRAY BAR*****/
 .gray-bar {
-  background: #f2f2f2;
+  background: #eaecf0;
+  width: 100%;
 }
 
 .toggle-container {
@@ -251,6 +254,7 @@ main {
 /*************Nav*****************/
 nav {
   min-width: 225px;
+  background: #eaecf0;
 }
 
 .book-home {
@@ -297,7 +301,7 @@ nav {
 
 .banner {
   display: flex;
-  width: 80%;
+  width: 85%;
   height: 300px;
   border: 1px solid #e3eaf2;
   box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15);
@@ -395,7 +399,7 @@ nav {
   color: #f88822;
 }
 
-.recom-bar p {
+.view-all {
   font-size: 1.4rem;
   line-height: 16px;
   letter-spacing: 0.35px;
@@ -427,6 +431,7 @@ nav {
   position: absolute;
   left: 0;
   top: 20px;
+  width: 50%;
 }
 
 .book-desc {
@@ -453,6 +458,7 @@ nav {
 .rate {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
 }
 
@@ -470,8 +476,9 @@ nav {
   border: 1px solid #82949d;
   border-radius: 31px;
   color: #82949d;
-  padding: 0 0.6em;
+  outline: none;
   cursor: pointer;
+  padding: 0.8em 1em;
 }
 .add-cart:hover {
   opacity: 0.8;
@@ -489,8 +496,88 @@ nav {
 /******************ASIDE***********************/
 
 aside {
-  width: 300px;
-  height: 500px;
+  width: 20%;
+  background: #eaecf0;
+}
+
+.delivery-shipping {
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.delivery {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.delivery-img {
+  margin-right: 20px;
+  text-align: center;
+  min-width: 30px;
+}
+
+.delivery-txt h3 {
+  font-size: 2rem;
+  line-height: 24px;
+  letter-spacing: 0.555556px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.delivery-txt p {
+  font-size: 1.5rem;
+  line-height: 20px;
+  letter-spacing: 0.416667px;
+  color: #4b4b4b;
+}
+
+.offers {
+  padding: 25px 20px;
+}
+
+.offers h3 {
+  font-size: 2rem;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 25px;
+}
+
+.offers-card {
+  background: #fff;
+  border: 1px solid #e3eaf2;
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.offers-img img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.offers-txt {
+  padding: 10px 15px;
+}
+
+.offers-txt h3 {
+  font-size: 3rem;
+  line-height: 36px;
+  letter-spacing: 0.25px;
+  margin-bottom: 10px;
+}
+
+.offers-txt p,
+a {
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
 /***********Footer************/
@@ -534,6 +621,39 @@ footer .container {
   color: #4b4b4b;
   font-weight: 900;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1250px) {
+  .options {
+    display: block;
+    text-align: center;
+  }
+  .add-cart {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .rate {
+    display: block;
+    text-align: center;
+  }
+
+  .add-cart {
+    padding: 0.8em 1.8em;
+  }
+
+  .banner {
+    width: 80%;
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  .banner-text {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1700px) {
