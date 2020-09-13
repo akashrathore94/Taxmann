@@ -298,6 +298,7 @@ header {
 }
 
 main {
+  position: relative;
   display: flex;
 }
 
@@ -658,6 +659,18 @@ footer .container {
   justify-content: space-between;
 }
 
+.contact {
+  width: 20%;
+}
+.foot {
+  display: flex;
+  width: 78%;
+}
+
+.footer-sub {
+  margin-right: 10px;
+}
+
 .contact p {
   margin-top: 20px;
 }
@@ -690,8 +703,7 @@ footer .container {
 
 @media screen and (max-width: 1250px) {
   .options {
-    display: block;
-    text-align: center;
+    flex-direction: column;
   }
   .add-cart {
     margin-bottom: 10px;
@@ -721,6 +733,74 @@ footer .container {
   }
 }
 
+@media screen and (max-width: 885px) {
+  .books-row {
+    display: block;
+  }
+  .book {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .book-img {
+    width: 40%;
+  }
+  .book-sub {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  .book-desc {
+    text-align: center;
+  }
+
+  .nav-head {
+    background: red;
+    position: absolute;
+    height: 100%;
+    z-index: 9;
+  }
+  .writer {
+    text-align: center;
+  }
+
+  footer .container {
+    display: block;
+  }
+  .contact {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .foot {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  aside {
+    background: blue;
+    position: absolute;
+    height: 100%;
+    z-index: 9;
+    right: 0;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+    --special-color: #f88822;
+    --border-color: #82949d;
+    --gray-text: #4a4a4a;
+  }
+}
 @media screen and (min-width: 1700px) {
   html {
     --header1: 3rem;
