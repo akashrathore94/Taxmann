@@ -249,6 +249,25 @@ header {
   opacity: 0;
 }
 
+.bar-show {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translateY(-50%);
+  opacity: 0;
+  display: none;
+}
+
+.nav-toggle.toggle .bar-show {
+  font-size: 1rem;
+  line-height: 12px;
+  letter-spacing: 0.208333px;
+  color: #8a8a8a;
+  transition: all 0.4s ease;
+  display: block;
+  opacity: 1;
+}
+
 .toggle-btn {
   position: absolute;
   left: 79%;
@@ -262,6 +281,7 @@ header {
   background: white;
   cursor: pointer;
   transition: all 0.4s ease;
+  z-index: 2;
 }
 
 .toggle-btn.toggle {
@@ -284,6 +304,7 @@ main {
 /*************Nav*****************/
 .nav-head {
   min-width: 225px;
+  width: 225px;
   background: #eaecf0;
   position: relative;
   left: 0;
@@ -292,7 +313,8 @@ main {
 
 .nav-head.toggle {
   left: -225px;
-  display: none;
+  min-width: 0px;
+  width: 0;
 }
 
 .navi {
