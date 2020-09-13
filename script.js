@@ -53,3 +53,18 @@ document.querySelector(".jour-btn").addEventListener("click", function () {
   document.querySelector(".jour-show").classList.toggle("show");
   document.querySelector(".third").classList.toggle("rotate");
 });
+
+document.querySelector(".tax-btn").addEventListener("click", function () {
+  document.querySelector(".tax-show").classList.toggle("show");
+  document.querySelector(".fourth").classList.toggle("rotate");
+});
+
+document.querySelector(".taxmann-btn").addEventListener("click", function () {
+  document.querySelector(".taxmann-show").classList.toggle("show");
+  document.querySelector(".fifth").classList.toggle("rotate");
+});
+
+document.querySelector(".web-btn").addEventListener("click", function () {
+  document.querySelector(".web-show").classList.toggle("show");
+  document.querySelector(".sixth").classList.toggle("rotate");
+});

@@ -222,7 +222,7 @@ header {
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: 80px;
+  top: 90px;
   z-index: 99;
   border-bottom: 1px solid #eaecf0;
 }
@@ -382,7 +382,10 @@ nav ul ul {
 }
 .nsm-show.show,
 .pro-show.show,
-.jour-show.show {
+.jour-show.show,
+.tax-show.show,
+.taxmann-show.show,
+.web-show.show {
   display: block;
 }
 
@@ -412,8 +415,20 @@ nav ul li a span.rotate {
 
 .first.rotate:before,
 .second.rotate:before,
-.third.rotate:before {
+.third.rotate:before,
+.fourth.rotate:before,
+.fifth.rotate:before,
+.sixth.rotate:before {
   content: "\f068";
+}
+
+.navi h4 {
+  padding: 10px 30px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.3px;
+
+  color: #8a8a8a;
 }
 
 /*********************Main SECTION***************/
@@ -429,10 +444,11 @@ main {
   background: #fff;
   display: flex;
   align-items: center;
-  top: -35px;
+  bottom: 0;
   left: 225px;
   padding: 5px 10px;
   z-index: 100;
+  border-left: 1px solid #eaecf0;
 }
 
 .bookstore h3 {
@@ -969,7 +985,7 @@ footer .container {
   }
 
   .gray-bar {
-    top: 60px;
+    top: 70px;
   }
 
   .users {
