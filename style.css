@@ -53,6 +53,7 @@ a:hover {
 
 body {
   font-family: "FuturaPT", sans-serif;
+  overflow-x: hidden;
 }
 
 /******HEADER**********/
@@ -219,15 +220,22 @@ header {
 .gray-bar {
   background: #eaecf0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.toggle-container {
+.toggle-container,
+.aside-toggle-container {
   width: 225px;
   height: 45px;
   padding-top: 15px;
   background: #fff;
 }
-.nav-toggle {
+.aside-toggle-container {
+  width: 125px;
+}
+.nav-toggle,
+.aside-nav-toggle {
   margin-right: 15px;
   background: #e3eaf2;
   float: right;
@@ -237,7 +245,8 @@ header {
   position: relative;
 }
 
-.nav-toggle p {
+.nav-toggle p,
+.aside-nav-toggle p {
   font-size: 1rem;
   line-height: 12px;
   letter-spacing: 0.208333px;
@@ -245,11 +254,13 @@ header {
   transition: all 0.4s ease;
 }
 
-.nav-toggle.toggle p {
+.nav-toggle.toggle p,
+.aside-nav-toggle.toggle p {
   opacity: 0;
 }
 
-.bar-show {
+.bar-show,
+.aside-bar-show {
   position: absolute;
   top: 50%;
   right: 15%;
@@ -258,7 +269,8 @@ header {
   display: none;
 }
 
-.nav-toggle.toggle .bar-show {
+.nav-toggle.toggle .bar-show,
+.aside-nav-toggle.toggle .aside-bar-show {
   font-size: 1rem;
   line-height: 12px;
   letter-spacing: 0.208333px;
@@ -268,7 +280,8 @@ header {
   opacity: 1;
 }
 
-.toggle-btn {
+.toggle-btn,
+.aside-toggle-btn {
   position: absolute;
   left: 79%;
   top: 0;
@@ -284,22 +297,20 @@ header {
   z-index: 2;
 }
 
-.toggle-btn.toggle {
+.toggle-btn.toggle,
+.aside-toggle-btn.toggle {
   left: 21%;
 }
 
-.toggle-btn i {
+.toggle-btn i,
+.aside-toggle-btn i {
   color: #f88822;
   transition: all 0.4s ease;
 }
 
-.toggle-btn.toggle i {
+.toggle-btn.toggle i,
+.aside-toggle-btn.toggle i {
   transform: rotate(180deg);
-}
-
-main {
-  position: relative;
-  display: flex;
 }
 
 /*************Nav*****************/
@@ -310,6 +321,7 @@ main {
   position: relative;
   left: 0;
   transition: all 0.4s ease;
+  border-right: 1px solid #f2f2f2;
 }
 
 .nav-head.toggle {
@@ -335,10 +347,32 @@ main {
 }
 
 /*********************Main SECTION***************/
+
+main {
+  position: relative;
+  display: flex;
+}
+
+.bookstore {
+  position: absolute;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  top: -35px;
+  left: 225px;
+  padding: 5px 10px;
+}
+
+.bookstore h3 {
+  margin-right: 10px;
+}
+
+.bookstore i {
+  color: #a4b3d5;
+}
+
 .main-section {
   flex-grow: 1;
-  border-left: 1px solid #f2f2f2;
-  border-right: 1px solid #f2f2f2;
 }
 
 .hero {
@@ -561,9 +595,18 @@ main {
 }
 /******************ASIDE***********************/
 
-aside {
-  width: 20%;
+.aside-head {
+  width: 225px;
   background: #eaecf0;
+  position: relative;
+  right: 0;
+  transition: all 0.4s ease;
+  border-left: 1px solid #f2f2f2;
+}
+
+.aside-head.toggle {
+  right: -180px;
+  width: 0;
 }
 
 .delivery-shipping {
@@ -738,9 +781,22 @@ footer .container {
 }
 
 @media screen and (max-width: 885px) {
+  .toggle-container {
+    width: 180px;
+  }
+
+  .bookstore {
+    left: 180px;
+  }
+
+  .banner-img {
+    display: block;
+  }
+
   .books-row {
     display: block;
   }
+
   .book {
     width: 100%;
     max-width: 600px;
@@ -786,13 +842,12 @@ footer .container {
     width: 100%;
     justify-content: space-between;
   }
-  aside {
+  .aside-head {
     position: absolute;
     height: 100%;
     z-index: 9;
     right: 0;
     width: 30%;
-    display: none;
   }
 }
 
