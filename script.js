@@ -37,3 +37,4 @@ function myFunction() {
   let w = document.body.offsetWidth;
   if (w <= 885) hide();
 }
+myFunction();

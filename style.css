@@ -53,7 +53,6 @@ a:hover {
 
 body {
   font-family: "FuturaPT", sans-serif;
-  overflow-x: hidden;
 }
 
 /******HEADER**********/
@@ -61,7 +60,7 @@ header {
   background: #fff;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 999;
   box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
 }
 
@@ -222,6 +221,10 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 80px;
+  z-index: 99;
+  border-bottom: 1px solid #eaecf0;
 }
 
 .toggle-container,
@@ -361,6 +364,7 @@ main {
   top: -35px;
   left: 225px;
   padding: 5px 10px;
+  z-index: 100;
 }
 
 .bookstore h3 {
@@ -596,18 +600,32 @@ main {
 /******************ASIDE***********************/
 
 .aside-head {
+  min-width: 225px;
   width: 225px;
   background: #eaecf0;
   position: relative;
   right: 0;
-  transition: all 0.4s ease;
   border-left: 1px solid #f2f2f2;
+  opacity: 1;
 }
 
 .aside-head.toggle {
-  right: -180px;
+  min-width: 0px;
+  display: none;
+  right: -225px;
   width: 0;
+  transition: all 0.8s ease;
+
+  opacity: 0;
 }
+
+/*
+
+left: -225px;
+  min-width: 0px;
+  width: 0;
+
+*/
 
 .delivery-shipping {
   background: #fff;
@@ -881,7 +899,25 @@ footer .container {
     --gray-text: #4a4a4a;
   }
   aside {
-    width: 40%;
+    min-width: 180px;
+    width: 180px;
+  }
+
+  .gray-bar {
+    top: 60px;
+  }
+
+  .users {
+    display: none;
+  }
+
+  .nav-head {
+    min-width: 180px;
+    width: 180px;
+  }
+
+  .nav-head.toggle {
+    left: -180px;
   }
 }
 @media screen and (min-width: 1700px) {
