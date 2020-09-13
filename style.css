@@ -664,7 +664,8 @@ footer .container {
 }
 .foot {
   display: flex;
-  width: 78%;
+  width: 70%;
+  justify-content: space-between;
 }
 
 .footer-sub {
@@ -710,7 +711,7 @@ footer .container {
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1110px) {
   .rate {
     display: block;
     text-align: center;
@@ -730,6 +731,9 @@ footer .container {
 
   .banner-text {
     width: 100%;
+  }
+  .search-box {
+    display: none;
   }
 }
 
@@ -760,7 +764,6 @@ footer .container {
   }
 
   .nav-head {
-    background: red;
     position: absolute;
     height: 100%;
     z-index: 9;
@@ -784,12 +787,34 @@ footer .container {
     justify-content: space-between;
   }
   aside {
-    background: blue;
     position: absolute;
     height: 100%;
     z-index: 9;
     right: 0;
     width: 30%;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .users {
+    margin-right: 10px;
+  }
+  .logo {
+    margin-right: 20px;
+  }
+  .logo-srch {
+    min-width: 20%;
+  }
+  .icons {
+    margin-left: 10px;
+    width: 15px;
+  }
+  .menu {
+    width: 40px;
+  }
+  .btn {
+    padding: 0.6em 2em;
   }
 }
 
@@ -799,6 +824,9 @@ footer .container {
     --special-color: #f88822;
     --border-color: #82949d;
     --gray-text: #4a4a4a;
+  }
+  aside {
+    width: 40%;
   }
 }
 @media screen and (min-width: 1700px) {
