@@ -222,7 +222,7 @@ header {
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: 90px;
+  top: 85px;
   z-index: 99;
   border-bottom: 1px solid #eaecf0;
 }
@@ -385,7 +385,9 @@ nav ul ul {
 .jour-show.show,
 .tax-show.show,
 .taxmann-show.show,
-.web-show.show {
+.web-show.show,
+.services-show.show,
+.diploma-show.show {
   display: block;
 }
 
@@ -418,17 +420,27 @@ nav ul li a span.rotate {
 .third.rotate:before,
 .fourth.rotate:before,
 .fifth.rotate:before,
-.sixth.rotate:before {
+.sixth.rotate:before,
+.seventh.rotate:before,
+.eighth.rotate:before {
   content: "\f068";
 }
 
 .navi h4 {
-  padding: 10px 30px;
-  font-size: 12px;
+  padding: 20px 30px;
+  font-size: 1.2rem;
   line-height: 14px;
   letter-spacing: 0.3px;
-
   color: #8a8a8a;
+}
+
+.navi h3 {
+  font-size: 1.4rem;
+  line-height: 16px;
+  letter-spacing: 0.291667px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  color: #6a6a6a;
 }
 
 /*********************Main SECTION***************/
@@ -1000,15 +1012,12 @@ footer .container {
   .nav-head.toggle {
     left: -180px;
   }
+  .head {
+    width: 96%;
+  }
 }
 @media screen and (min-width: 1700px) {
   html {
-    --header1: 3rem;
-    --header2: 5rem;
-    --header3: 4rem;
-    --header4: 3rem;
-    --text: 3rem;
-    --big: 8rem;
-    --foot: 1.3rem;
+    font-size: 75%;
   }
 }

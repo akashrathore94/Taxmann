@@ -1,37 +1,20 @@
+/***TO HIDE LEFT BAR ***/
 function navToggle() {
-  const navHead = document.querySelector(".nav-head");
-  navHead.classList.toggle("toggle");
-  var btn = document.querySelector(".toggle-btn");
-  btn.classList.toggle("toggle");
-  var navToggle = document.querySelector(".nav-toggle");
-  navToggle.classList.toggle("toggle");
+  document.querySelector(".nav-head").classList.toggle("toggle");
+  document.querySelector(".toggle-btn").classList.toggle("toggle");
+  document.querySelector(".nav-toggle").classList.toggle("toggle");
 }
 
+/***TO HIDE RIGHT BAR */
 function asideToggle() {
-  const asideHead = document.querySelector(".aside-head");
-  asideHead.classList.toggle("toggle");
-  var btn = document.querySelector(".aside-toggle-btn");
-  btn.classList.toggle("toggle");
-  var asideToggle = document.querySelector(".aside-nav-toggle");
-  asideToggle.classList.toggle("toggle");
+  document.querySelector(".aside-head").classList.toggle("toggle");
+  document.querySelector(".aside-toggle-btn").classList.toggle("toggle");
+  document.querySelector(".aside-nav-toggle").classList.toggle("toggle");
 }
+
+/*****AS SOON AS THE WINDOW REACHES 885PX sidebars will collapse automatically*****/
 
 window.addEventListener("resize", myFunction);
-
-function hide() {
-  const navHead = document.querySelector(".nav-head");
-  const asideHead = document.querySelector(".aside-head");
-  const btn = document.querySelector(".toggle-btn");
-  const asideBtn = document.querySelector(".aside-toggle-btn");
-  const navToggle = document.querySelector(".nav-toggle");
-  const asideToggle = document.querySelector(".aside-nav-toggle");
-  navToggle.classList.add("toggle");
-  asideToggle.classList.add("toggle");
-  navHead.classList.add("toggle");
-  asideHead.classList.add("toggle");
-  btn.classList.add("toggle");
-  asideBtn.classList.add("toggle");
-}
 
 function myFunction() {
   let w = document.body.offsetWidth;
@@ -39,6 +22,16 @@ function myFunction() {
 }
 myFunction();
 
+function hide() {
+  document.querySelector(".nav-head").classList.add("toggle");
+  document.querySelector(".toggle-btn").classList.add("toggle");
+  document.querySelector(".nav-toggle").classList.add("toggle");
+  document.querySelector(".aside-head").classList.add("toggle");
+  document.querySelector(".aside-toggle-btn").classList.add("toggle");
+  document.querySelector(".aside-nav-toggle").classList.add("toggle");
+}
+
+/**VERTICAL SIDEBAR LIST FUNCTIONING**/
 document.querySelector(".pro-btn").addEventListener("click", function () {
   document.querySelector(".pro-show").classList.toggle("show");
   document.querySelector(".first").classList.toggle("rotate");
@@ -67,4 +60,14 @@ document.querySelector(".taxmann-btn").addEventListener("click", function () {
 document.querySelector(".web-btn").addEventListener("click", function () {
   document.querySelector(".web-show").classList.toggle("show");
   document.querySelector(".sixth").classList.toggle("rotate");
+});
+
+document.querySelector(".services-btn").addEventListener("click", function () {
+  document.querySelector(".services-show").classList.toggle("show");
+  document.querySelector(".seventh").classList.toggle("rotate");
+});
+
+document.querySelector(".diploma-btn").addEventListener("click", function () {
+  document.querySelector(".diploma-show").classList.toggle("show");
+  document.querySelector(".eighth").classList.toggle("rotate");
 });
