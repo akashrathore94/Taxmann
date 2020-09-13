@@ -38,3 +38,18 @@ function myFunction() {
   if (w <= 885) hide();
 }
 myFunction();
+
+document.querySelector(".pro-btn").addEventListener("click", function () {
+  document.querySelector(".pro-show").classList.toggle("show");
+  document.querySelector(".first").classList.toggle("rotate");
+});
+
+document.querySelector(".nsm-btn").addEventListener("click", function () {
+  document.querySelector(".nsm-show").classList.toggle("show");
+  document.querySelector(".second").classList.toggle("rotate");
+});
+
+document.querySelector(".jour-btn").addEventListener("click", function () {
+  document.querySelector(".jour-show").classList.toggle("show");
+  document.querySelector(".third").classList.toggle("rotate");
+});
