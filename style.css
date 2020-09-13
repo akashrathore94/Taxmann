@@ -57,6 +57,14 @@ body {
 
 /******HEADER**********/
 header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.12);
+}
+
+.head {
   width: 90%;
   margin: auto;
   display: flex;
@@ -170,6 +178,11 @@ header {
   align-items: center;
 }
 
+.actions a {
+  display: flex;
+  align-items: center;
+}
+
 .btn {
   font-size: 1.2rem;
   background: #f88822;
@@ -257,10 +270,15 @@ nav {
   background: #eaecf0;
 }
 
+.navi {
+  background: #fff;
+  padding-top: 10px;
+}
+
 .book-home {
   background: #fee6d6;
   padding: 5px 35px;
-  margin: 5px 0;
+  margin-bottom: 5px;
 }
 
 .book-home h3 {
@@ -575,7 +593,7 @@ aside {
 }
 
 .offers-txt p,
-a {
+.offers-txt a {
   display: inline-block;
   margin-bottom: 10px;
 }
