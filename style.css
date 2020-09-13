@@ -242,11 +242,18 @@ header {
   line-height: 12px;
   letter-spacing: 0.208333px;
   color: #8a8a8a;
+  transition: all 0.4s ease;
 }
-.nav-toggle button {
+
+.nav-toggle.toggle p {
+  opacity: 0;
+}
+
+.toggle-btn {
   position: absolute;
+  left: 79%;
   top: 0;
-  right: 1px;
+  transform: translate(-50%);
   width: 25px;
   height: 25px;
   border: none;
@@ -254,10 +261,20 @@ header {
   border-radius: 15px;
   background: white;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
 
-.nav-toggle button i {
+.toggle-btn.toggle {
+  left: 21%;
+}
+
+.toggle-btn i {
   color: #f88822;
+  transition: all 0.4s ease;
+}
+
+.toggle-btn.toggle i {
+  transform: rotate(180deg);
 }
 
 main {
@@ -265,9 +282,17 @@ main {
 }
 
 /*************Nav*****************/
-nav {
+.nav-head {
   min-width: 225px;
   background: #eaecf0;
+  position: relative;
+  left: 0;
+  transition: all 0.4s ease;
+}
+
+.nav-head.toggle {
+  left: -225px;
+  display: none;
 }
 
 .navi {
