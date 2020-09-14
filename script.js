@@ -1,11 +1,11 @@
-/***TO HIDE LEFT BAR ***/
+/***TO HIDE LEFT BAR ON CLICK***/
 function navToggle() {
   document.querySelector(".nav-head").classList.toggle("toggle");
   document.querySelector(".toggle-btn").classList.toggle("toggle");
   document.querySelector(".nav-toggle").classList.toggle("toggle");
 }
 
-/***TO HIDE RIGHT BAR */
+/***TO HIDE RIGHT BAR ON CLICK*/
 function asideToggle() {
   document.querySelector(".aside-head").classList.toggle("toggle");
   document.querySelector(".aside-toggle-btn").classList.toggle("toggle");
@@ -13,14 +13,12 @@ function asideToggle() {
 }
 
 /*****AS SOON AS THE WINDOW REACHES 885PX sidebars will collapse automatically*****/
-
 window.addEventListener("resize", myFunction);
 
 function myFunction() {
   let w = document.body.offsetWidth;
-  if (w <= 885) hide();
+  if (w <= 885 && w > 600) hide();
 }
-myFunction();
 
 function hide() {
   document.querySelector(".nav-head").classList.add("toggle");
@@ -31,7 +29,14 @@ function hide() {
   document.querySelector(".aside-nav-toggle").classList.add("toggle");
 }
 
-/**VERTICAL SIDEBAR LIST FUNCTIONING**/
+/** For mobile screen on load side bars will collapse **/
+function myFunction2() {
+  let w = document.body.offsetWidth;
+  if (w < 600) hide();
+}
+myFunction2();
+
+/**VERTICAL SIDEBAR nav-LIST FUNCTIONING**/
 document.querySelector(".pro-btn").addEventListener("click", function () {
   document.querySelector(".pro-show").classList.toggle("show");
   document.querySelector(".first").classList.toggle("rotate");

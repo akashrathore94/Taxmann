@@ -318,6 +318,7 @@ header {
 
 /*************Nav*****************/
 .nav-head {
+  min-width: 225px;
   width: 225px;
   background: #eaecf0;
   position: relative;
@@ -331,6 +332,7 @@ header {
   left: -225px;
   opacity: 0;
   width: 0;
+  min-width: 0;
 }
 
 .navi {
@@ -709,14 +711,6 @@ main {
   opacity: 0;
 }
 
-/*
-
-left: -225px;
-  min-width: 0px;
-  width: 0;
-
-*/
-
 .delivery-shipping {
   background: #fff;
   border-radius: 5px;
@@ -1012,6 +1006,15 @@ footer .container {
   .nav-head.toggle {
     left: -180px;
   }
+
+  .navi-box {
+    width: 120px;
+  }
+
+  nav ul ul li a {
+    padding-left: 15px;
+  }
+
   .head {
     width: 96%;
   }
